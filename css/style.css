@@ -1,14 +1,29 @@
+
 .center {
   text-align: center;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
 #container {
   width: 400px;
-  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
 #entryinput {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 #entrybutton {
@@ -20,4 +35,9 @@
   margin: 20px auto;
   font-size: 24px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+#textoutput {
+  margin-top: 20px;
 }
