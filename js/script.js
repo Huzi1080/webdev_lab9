@@ -1,16 +1,15 @@
-function init() {
-  var button = document.getElementById('entrybutton');
 
-  function showMeText() {
-    var textbox = document.getElementById('entryinput');
-    var textValue = textbox.value;
+document.addEventListener("DOMContentLoaded", function() {
+  
+  const button = document.getElementById("entrybutton");
+  const input = document.getElementById("entryinput");
+  const output = document.getElementById("textoutput");
 
-    document.getElementById('textoutput').innerHTML = textValue;
+  button.addEventListener("click", function() {
+    const userInput = input.value;
 
-    alert("Huzaifa Anis: " + textValue);
-  }
+    alert("Daniel Krieglstein: " + userInput);
 
-  button.addEventListener('click', showMeText);
-}
-
-window.addEventListener('load', init);
+    output.textContent = userInput;
+  });
+});
