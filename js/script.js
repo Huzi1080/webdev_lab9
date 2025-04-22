@@ -1,6 +1,4 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-  
   const button = document.getElementById("entrybutton");
   const input = document.getElementById("entryinput");
   const output = document.getElementById("textoutput");
@@ -8,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
   button.addEventListener("click", function() {
     const userInput = input.value;
 
-    alert("Daniel Krieglstein: " + userInput);
+    
+    alert("Huzaifa Anis: " + userInput);
 
     output.textContent = userInput;
   });
