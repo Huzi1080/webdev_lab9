@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("entrybutton");
-  const input = document.getElementById("entryinput");
-  const output = document.getElementById("textoutput");
+function init(){
+  var button = document.getElementById('entrybutton');
 
-  button.addEventListener("click", function () {
-    const userInput = input.value;
+  function showMeText(){
+    var textbox = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = textbox.value;
+    alert("Huzaifa Anis: " + textbox.value);
+  }
 
-    alert("Huzaifa Anis " + userInput);
-
-    output.textContent = userInput;
-  });
-});
+  button.addEventListener('click', showMeText);
+  }
+  
+window.addEventListener('load', init);
